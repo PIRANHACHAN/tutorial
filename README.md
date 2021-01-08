@@ -7,5 +7,5 @@
 - **Page（静态页面）** — 一种特殊的 post，它不是以分类组织的。它有别于你其他的日志。注意：在 WordPress，page（页面）和 Page（静态页面）是两种不同的东西。## WordPress 主题的层次结构
 ### WordPress 主题的层次结构
 一旦你主题中的某个文件丢失了，WordPress 主题系统将会使用其他什么模板文件来代替。
-![main-hierarchy.gif](https://cdn.wpjam.com/2007/06/main-hierarchy.gif?imageMogr2/auto-orient/thumbnail/1200x/quality/70/interlace/1|watermark/1/image/aHR0cHM6Ly9jZG4ud3BqYW0uY29tL3dwamFtL3dhdGVybWFyay5wbmc=/dissolve/100/gravity/SouthEast/dx/10/dy/10#)
+![main-hierarchy.gif](C:\Users\openNewSth\Desktop\1.png)
 **越靠左越重要**。
