@@ -76,7 +76,7 @@
           </h2>
           <!-- 文章内容 -->
           <div class="entry">
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?>
             <!-- 文章元数据 -->
             <p class="postmetadata">
               <!-- 输出冒号 -->

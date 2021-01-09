@@ -77,6 +77,7 @@
           <!-- 文章内容 -->
           <div class="entry">
             <?php the_content(); ?>
+            <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
             <!-- 文章元数据 -->
             <p class="postmetadata">
               <!-- 输出冒号 -->
@@ -85,20 +86,21 @@
               <?php the_category(', ') ?>
               <?php _e('by'); ?>
               <!-- 作者 -->
-              <?php the_author(); ?><br />
-              <!-- 评论 -->
-              <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+              <?php the_author(); ?>
+
               <!-- 编辑，登录可见 -->
               <?php edit_post_link('Edit', ' &#124; ', ''); ?>
             </p>
+          </div>
+          <div class="comments-template">
+            <?php comments_template(); ?>
           </div>
         </div>
         <?php endwhile; ?>
         <!-- 结束循环 -->
         <!-- 分页导航 -->
         <div class="navagation">
-          <!-- 中间，上一页，下一页 -->
-          <?php posts_nav_link('in between','Previous Page','after'); ?>
+          <?php previous_post_link('%link') ?> <?php next_post_link('%link') ?>
         </div>
         <?php else: ?>
         <!-- 无文章时输出 -->
